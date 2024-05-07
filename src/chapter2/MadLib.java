@@ -5,25 +5,23 @@ import java.util.Scanner;
 public class MadLib {
 
     public static void main(String[] args){
-
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("---MADLIBS---");
-        System.out.println("What is your name?: ");
-        String name = scanner.next();
+        //Get adjective
+        System.out.println("Input adjective: ");
+        String adjective = scanner.nextLine();
 
-        System.out.println("Hello "+ name + " Enter the the season of the year?: ");
-        String season = scanner.next();
+        //Get the season of the year
+        System.out.println("Input the season of the year: ");
+        String season = scanner.nextLine();
 
-        System.out.println("Thank you for participating " +name + ". "+ "Now enter a whole number: ");
-        int wholeNum = scanner.nextInt();
-
-        System.out.println("Good job! " + name + ". "+ "Now please enter an adjective: ");
-        String adjective = scanner.next();
-
+        //Get whole number
+        System.out.println("Input a whole number: ");
+        int wholeNumber = scanner.nextInt();
         scanner.close();
 
-        System.out.println("On a "+ adjective + " " + season +" day, I drink a minimum of "+ wholeNum + " cups of coffee.");
+        System.out.println("On a " + adjective + " " + season + " day, I drink a minimum of " + wholeNumber + " cups of coffee." );
+
 
     }
 }
