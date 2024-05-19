@@ -6,6 +6,7 @@ public class TextProcessor {
 
         wordCount("My birthday month is September");
 
+        reverseString("Camel");
 
     }
 
@@ -27,5 +28,16 @@ public class TextProcessor {
         }
     }
 
+    /**
+     * Prints a String in reverse order
+     * @param text String to reverse
+     */
+    public static void reverseString(String text){
+        String reversedString = "";
+        for(int i = text.length()-1; i> 0; i--){
+            reversedString += text.charAt(i);
+        }
+        System.out.println("Reversed string: " + reversedString);
+    }
 
 }
